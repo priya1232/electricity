@@ -16,7 +16,7 @@ public class DatEnt extends JInternalFrame implements ActionListener
 JTextField ac_d,rt_no1,cash_deposit,rt_no2,totno_inst,oyec_amt,inst_amt,paid_inst,bal_inst,ending_month,f_r,area_code1,mr_code1;
 JTextField lemgamt,scmgamt,lramt,ilemg,iscmg,ilr,noofinst_lemg,noofinst_semg,noofinst_lr,pnoofinst_lemg,pnoofinst_semg,pnoofinst_lr;
 
-	String dw[]={"Date","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
+	String dw[]={"Date","[1]-[31]"};
 	String mw[]={"Month","JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};
 	String ac[]={"A01","A02","A03","A04","A05","A06","A07","A08","A09","A10","A11","A12","A13","A14","A15","A16","A17","A18","A19","A20","A21","A22","A23","A24","A25","B01","B02","B03","B04","B05","B06","B07","B08","B09","B10","B11","B12","B13","B14","B15","B16","B17","B18","B19","B20","B21","B22","B23","B24","B25"};
 	String mc[]={"1","2","3","4","5","6","7","8"};
@@ -311,7 +311,7 @@ JTextField lemgamt,scmgamt,lramt,ilemg,iscmg,ilr,noofinst_lemg,noofinst_semg,noo
      			p45.setBounds(200,30,350,30);
      			p45.add(dd);
      			panel3.add(p45);	    
-			conno=new JLabel("Consumer No:");
+			conno=new JLabel("CONSUMER NUMBER:");
 
 			try{
 			QueryData qd = new QueryData();
@@ -365,7 +365,7 @@ JTextField lemgamt,scmgamt,lramt,ilemg,iscmg,ilr,noofinst_lemg,noofinst_semg,noo
 		p12.setBounds(5,140,300,105);
 		panel3.add(p12);
 
-		rtno1=new JLabel("Receipt no");
+		rtno1=new JLabel("RECIPT NUMBER");
 		rt_no1=new JTextField(10);
 		rtno2=new JLabel("Receipt no");
 		rt_no2=new JTextField(10);
